@@ -8,7 +8,7 @@ end
 
 When(/^I click on the first contact$/) do
 	screenshot name: "About to tap on first contact"
-	touch "ViewCellRenderer_ViewCellContainer index:0"
+	touch "ViewCellRendererViewCellContainer index:0"
 	screenshot name: "Tapped on first contact"
 end
 

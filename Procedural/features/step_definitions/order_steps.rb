@@ -6,21 +6,21 @@ end
 
 When(/^I click on Add new order form$/) do
   screenshot name:'About to tap new order button'
-  touch "FormsImageView"
+
   screenshot name:'Tapped new order button'
   sleep 4
 end
 
 When(/^I select new product$/) do
   wait_for_element_exists "* marked:'Deliver Order'"
-  touch "EntryEditText index:0"
+  touch "EntryEditText index:10"
   screenshot name:'Tapped Select Products'
 
   wait_for_element_exists "* id:'action_bar_title' text:'Products'"
 end
 
 When(/^I choose type "(.*?)"$/) do |type|
-  touch "FormsTextView marked:'#{type}'"
+  touch "FormsTextView id:'#{type}'"
   screenshot name:"Tapped on #{type}"
   wait_for_element_exists "* id:'action_bar_title' text:'#{type}'"
 end
@@ -48,6 +48,6 @@ When(/^I tap on "(.*?)"$/) do |arg1|
 end
 
 Then(/^I confirm "(.*?)"$/) do |arg1|
-  touch "android.widget.Button text:'Save'"
+  touch "android.widget.TextView text:'Save'"
   screenshot name:"Confirmed save dialog"
 end
