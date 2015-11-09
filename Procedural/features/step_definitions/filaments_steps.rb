@@ -11,8 +11,8 @@ Then(/^I am on Sales Page$/) do
   screenshot name: 'On Sales Page'
 end
 
-Then(/^I press "(.*?)" Tab$/) do |tabName|
-  touch "android.widget.TextView text:'#{tabName}'"
+Then(/^I go to "(.*?)" Tab$/) do |tabName|
+  tap_mark(tabName)
   screenshot name: 'Tapped on Products Tab'
   wait_for_element_exists("* text:'3D Printer Kits'")
   screenshot name: 'On Products Page'
