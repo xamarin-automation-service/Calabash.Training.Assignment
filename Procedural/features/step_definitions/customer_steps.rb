@@ -1,4 +1,5 @@
 When(/^I navigate to "(.*?)" tab$/) do |arg1|
+	sleep 5
 	wait_for_element_exists "* marked:'6-Week Sales'"
 	screenshot name: "About to tap on #{arg1} tab"
 	touch "android.widget.TextView text:'#{arg1}'"
