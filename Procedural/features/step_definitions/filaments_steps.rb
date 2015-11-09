@@ -12,7 +12,7 @@ Then(/^I am on Sales Page$/) do
 end
 
 Then(/^I go to "(.*?)" Tab$/) do |tabName|
-  tap_mark(tabName)
+  touch(tabName)
   screenshot name: 'Tapped on Products Tab'
   wait_for_element_exists("* text:'3D Printer Kits'")
   screenshot name: 'On Products Page'
