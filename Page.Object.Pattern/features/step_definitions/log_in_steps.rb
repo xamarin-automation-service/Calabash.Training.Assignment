@@ -7,6 +7,6 @@ end
 
 
 Then(/^I am on Sales Page$/) do
-  sales_page = page(SalesPage)
+  sales_page = page(SalesHomePage)
   sales_page.await
 end
