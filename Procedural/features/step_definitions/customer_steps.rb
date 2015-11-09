@@ -4,7 +4,7 @@ When(/^I navigate to "(.*?)" tab$/) do |arg1|
 end
 
 When(/^I click on the first contact$/) do
-	touch "ViewCellRenderer_ViewCellContainer index:0"
+	touch "ViewCellRendererViewCellContainer index:0"
 end
 
 Then(/^I should see "(.*?)" present on screen$/) do |arg1|
