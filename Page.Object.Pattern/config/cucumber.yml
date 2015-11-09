@@ -1,0 +1,16 @@
+<%
+
+# This is erb. Use it to prepare your profiles.
+# Here is a complex example to inspire (or frighten) you.
+# http://git.io/gU-H_g
+
+required_files = ['features/support', 'features/step_definitions']
+#ios_required_files = "-r #{Dir.glob('features/ios/**/*').concat(required_files).join(' -r ')}"
+android_required_files = "-r #{Dir.glob('features/android/**/*').concat(required_files).join(' -r ')}"
+
+%>
+
+
+android: RESET_BETWEEN_SCENARIOS=1 PLATFORM=android -r features/support -r features/android/support -r features/step_definitions -r features/android/pages/ --tags @test
+
+#ios: RESET_BETWEEN_SCENARIOS=1 PLATFORM=ios -r features/support -r features/ios/support -r features/ios/helpers -r features/step_definitions -r features/ios/pages --tags @test
