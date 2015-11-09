@@ -3,7 +3,7 @@ require 'calabash-android/abase'
 class PLA3DPrinterKitsPage < Calabash::ABase
 
   def trait
-    return "PLA-JEWEL"
+    return "* marked:'PLA-JEWEL'"
   end
 
   def select_item(item_name)

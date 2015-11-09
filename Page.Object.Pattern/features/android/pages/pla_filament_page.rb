@@ -3,7 +3,7 @@ require 'calabash-android/abase'
 class PLAFilamentPage < Calabash::ABase
 
   def trait
-    return "FIL-PLA-VLT"
+    return "* marked:'FIL-PLA-VLT'"
   end
 
   def select_color(color)
