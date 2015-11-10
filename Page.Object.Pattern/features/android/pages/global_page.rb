@@ -20,7 +20,7 @@ class GlobalPage < Calabash::ABase
 	end
 
 	def navigate_to_customers
-		touch @customers_tab
+		query @customers_tab
 	end
 
 	def navigate_to_products

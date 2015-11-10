@@ -4,7 +4,7 @@ class CustomerOrderDetailsPage < Calabash::ABase
 	def trait
 		@save_button = "* marked:'Save'"
 		@exit_button = "* marked:'Exit'"
-		@confirm_exit_button = "* marked:'Exit and Discard'"
+		@confirm_exit_button = "* marked:'Exit and discard'"
 		@product_field = "EntryEditText index:0"
 
 		return "* marked:'Deliver Order'"
