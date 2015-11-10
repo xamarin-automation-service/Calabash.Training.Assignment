@@ -3,7 +3,7 @@ require 'calabash-android/abase'
 class ProductDetailsPage < Calabash::ABase
   def trait
     @add_to_order_button = "* marked:'Add to order'"
-    return "action_bar_container"
+    return "* id:'action_bar_container'"
   end
 
   def verify_product

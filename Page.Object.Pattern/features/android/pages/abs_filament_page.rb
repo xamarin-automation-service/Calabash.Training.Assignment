@@ -6,7 +6,8 @@ class ABSFilamentPage < Calabash::ABase
 	end
 
 	def select_color color
-		scroll_to "FIL-ABS-#{color}"
-		touch "FIL-ABS-#{color}"
+		color_chosen = "FIL-ABS-#{color}"
+		# scroll_to("* marked:'#{color_chosen}'")
+		tap_mark(color_chosen)
 	end
 end

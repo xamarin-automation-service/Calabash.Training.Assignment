@@ -6,6 +6,7 @@ class LeadDetailsPage < Calabash::ABase
 		@exit_button = "* marked:'Exit'"
 		@confirm_discard = "* marked:'Exit and Discard'"
 
+		sleep(2)
 		return "* marked:'Opportunity'"
 	end
 

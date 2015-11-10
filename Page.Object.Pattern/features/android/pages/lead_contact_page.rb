@@ -4,6 +4,7 @@ class LeadContactPage < Calabash::ABase
 	def trait
 		@details_tab = "com.android.internal.widget.ScrollingTabContainerView$TabView index:0"
 
+		sleep(2)
 		return "* marked:'Role'"
 	end
 

@@ -7,8 +7,10 @@ class PLAFilamentPage < Calabash::ABase
   end
 
   def select_color(color)
-    string color_chosen = "FIL-PLA-#{color}"
-    scroll_to("* marked:'#{color_chosen}'")
+
+    color_chosen = "FIL-PLA-#{color}"
+    # scroll_to("* marked:'#{color_chosen}'")
     tap_mark(color_chosen)
+
   end
 end
