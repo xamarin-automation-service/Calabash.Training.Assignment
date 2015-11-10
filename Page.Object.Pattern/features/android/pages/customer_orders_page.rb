@@ -4,7 +4,7 @@ class CustomerOrdersPage < Calabash::ABase
 	def trait
 		@customer_contact = "* marked:'Customer'"
 		@customer_sales = "* marked:'Sales'"
-		@new_order_button = "FormsImageView"
+		@new_order_button = "FormsImageView index:2"
 
 		return "* marked:'Open Orders'"
 	end

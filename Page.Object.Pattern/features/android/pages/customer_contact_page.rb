@@ -9,9 +9,9 @@ class CustomerContactPage < Calabash::ABase
     @phone_button = "FormsImageView index:2"
     @map_button = "FormsImageView index:3"
     @header_image = "ImageRenderer index:0"
-    @contact = "* marked:'Contact'"
+    @contact = "* marked:'Contacts'"
     @phone = "* marked:'Phone'"
-    @address = "* marked:'Address'"
+    @address = "* id:'Address'"
 
     return "* marked:'Address'"
   end
