@@ -4,7 +4,7 @@ class SalesHomePage < Calabash::ABase
 
   def trait
     @first_lead = "FormsTextView index:4"
-
+    sleep 5
     return "* marked:'WEEKLY AVERAGE'"
   end
 

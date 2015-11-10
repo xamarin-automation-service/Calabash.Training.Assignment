@@ -3,9 +3,9 @@ require 'calabash-android/abase'
 class CustomerContactPage < Calabash::ABase
 
   def trait
-    @customer_orders = "Orders"
-    @customer_sales = "Sales"
-    @dial_cancel_button = "No"
+    @customer_orders = "* marked:'Orders'"
+    @customer_sales = "* marked:'Sales'"
+    @dial_cancel_button = "* marked:'No'"
     @phone_button = "FormsImageView index:2"
     @map_button = "FormsImageView index:3"
     @header_image = "ImageRenderer index:0"
