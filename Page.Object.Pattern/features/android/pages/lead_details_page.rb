@@ -11,7 +11,7 @@ class LeadDetailsPage < Calabash::ABase
 	end
 
 	def go_to_lead_contact
-		touch @contact_tab
+		touch @tab_contact
 	end
 
 	def exit_and_discard

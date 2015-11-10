@@ -3,7 +3,7 @@ require 'calabash-android/abase'
 class PartsPage < Calabash::ABase
 
   def trait
-    return "* marked:'Build Plates'"
+    return "* text:'Build Plates'"
   end
 
   def select_part(part_name)

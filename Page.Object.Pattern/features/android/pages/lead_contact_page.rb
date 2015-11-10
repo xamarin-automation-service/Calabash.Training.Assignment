@@ -5,7 +5,7 @@ class LeadContactPage < Calabash::ABase
 		@details_tab = "com.android.internal.widget.ScrollingTabContainerView$TabView index:0"
 
 		sleep(2)
-		return "* marked:'Role'"
+		return "* marked:'FirstName'"
 	end
 
 	def go_to_lead_details
